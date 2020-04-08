@@ -1,26 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import LandingPage from './components/landingpage';
+import AboutMe from './components/aboutme';
+import Contact from './components/contact';
+import Projects from './components/projects';
+import Navbar from "./components/Navbar";
+import Footer from './components/Footer';
+import {
+    BrowserRouter as Router,
+    Switch,
+    Route,
+ 
+  } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="page-container">
+            <div className="content-wrap">
+                
+                <Router>
+                <Navbar />
+                    {/* A <Switch> looks through its children <Route>s and
+                        renders the first one that matches the current URL. */}
+                    <Switch>   
+                    <Route path="/landingpage" component={LandingPage}>
+                        <LandingPage />
+                    </Route>
+                    <Route path="/aboutme" component={AboutMe}>
+                        <AboutMe />
+                    </Route>
+                    <Route path="/projects" component={Projects}>
+                        <Projects />
+                    </Route>
+                    <Route path="/contact" component={Contact}>
+                        <Contact />
+                    </Route>
+                    </Switch>
+                </Router>
+            </div>
+            <Footer />
+        </div>
+    );
 }
+
 
 export default App;
