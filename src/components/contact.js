@@ -7,7 +7,7 @@ const FormPage = () => {
     <MDBRow className="d-flex justify-content-center">
         <MDBCol md="8">
         <form className="form">
-            <p className="h5 text-center mb-4">Write to us</p>
+            <p className="h5 text-center mb-4">Write me</p>
             <div className="grey-text">
             <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
                 success="right" />

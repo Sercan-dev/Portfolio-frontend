@@ -14,7 +14,7 @@ import { Spring } from 'react-spring/renderprops';
                     <div style={props}>
                         <div className="App">
                             <div className="banner-text">
-                                <h1>Full Stack Web Developer</h1>
+                                <h1>Full Stack Web Development</h1>
                                 <hr/>
                                 <p>HTML/CSS | JavaScript | React | Python | Django | Wordpress REST-API</p>
                                 <div className="social-links">

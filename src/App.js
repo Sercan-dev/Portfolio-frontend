@@ -17,7 +17,7 @@ function App() {
     return (
         <div className="page-container">
             <div className="content-wrap">
-                
+            
                 <Router>
                 <Navbar />
                     {/* A <Switch> looks through its children <Route>s and
@@ -40,6 +40,7 @@ function App() {
             </div>
             <Footer />
         </div>
+        
     );
 }
 

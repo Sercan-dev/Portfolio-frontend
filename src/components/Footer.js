@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import { MDBIcon } from "mdbreact";
 
 
 
@@ -10,33 +11,41 @@ const Footer = () => {
                 <div className="row">
                     {/* column1 */}
                     <div className="col">
-                        <h4>Beech Way Designs</h4>
+                        <h4>Beech Way Design</h4>
                         <ul className="list-unstyled">
-                            <li>027392739739</li>
                             <li>Frankfurt, Germany</li>
                         </ul>
                     </div>
                     {/* column2 */}
                     <div className="col">
-                        <h4>Stuff</h4>
+                        <h4></h4>
                         <ul className="list-unstyled">
-                            <li>AJAJA</li>
-                            <li>haha</li>
+                            <li>
+                                <a href="https://github.com/Sercan-dev" rel="noopener noreferrer" target="_blank">
+                                <MDBIcon fab icon="github" />
+                                </a>
+                            </li>
+                            <li>
+                            </li>
                         </ul>
                     </div>
                     {/* column3 */}
                     <div className="col">
-                        <h4>Another Stuff</h4>
+                        <h4></h4>
                         <ul className="list-unstyled">
-                            <li>LLLLLL</li>
-                            <li>AAAA</li>
+                            <li>
+                            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                <MDBIcon fab icon="linkedin" />
+                            </a>
+                            </li>
+                            <li></li>
                         </ul>
                     </div>
                 </div>
                 <hr />
                 <div className="row">
                     <p className="col-sm">
-                        &copy;{new Date().getFullYear()} Beech Way Designs GmbH | All rights reserved | Terms of Service
+                        &copy;{new Date().getFullYear()} Beech Way Design | All rights reserved 
                     </p>
                 </div>
             </div>
