@@ -22,7 +22,8 @@ function App() {
                 <Navbar />
                     {/* A <Switch> looks through its children <Route>s and
                         renders the first one that matches the current URL. */}
-                    <Switch>   
+                    <Switch>
+                    <Route  path ='/' component={LandingPage} exact from='/' to="/landingpage" ></Route>   
                     <Route path="/landingpage" component={LandingPage}>
                         <LandingPage />
                     </Route>

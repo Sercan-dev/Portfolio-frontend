@@ -1,32 +1,36 @@
-import React from "react";
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
+import React from 'react';
+import emailjs from 'emailjs-com';
 
-const FormPage = () => {
+
+
+
+
+export default function FormPage() {
+
+    function sendEmail(e) {
+        e.preventDefault();
+
+        emailjs.sendForm('gmail', 'template_GntjsYzE', e.target, 'user_zQMNMx8247QyBzMah7QG7')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    }
+
     return (
-    <MDBContainer>
-    <MDBRow className="d-flex justify-content-center">
-        <MDBCol md="8">
-        <form className="form">
-            <p className="h5 text-center mb-4">Write to us</p>
-            <div className="grey-text">
-            <MDBInput label="Your name" icon="user" group type="text" validate error="wrong"
-                success="right" />
-            <MDBInput label="Your email" icon="envelope" group type="email" validate error="wrong"
-                success="right" />
-            <MDBInput label="Subject" icon="tag" group type="text" validate error="wrong" success="right" />
-            <MDBInput type="textarea" rows="2" label="Your message" icon="pencil-alt" />
-            </div>
-            <div className="text-center">
-            <MDBBtn outline color="success">
-                Send
-                <MDBIcon far icon="paper-plane" className="ml-1" />
-            </MDBBtn>
-            </div>
-        </form>
-        </MDBCol>
-    </MDBRow>
-    </MDBContainer>
+        <div className="contact-form">
+            <h1>Message me</h1>
+            <form  onSubmit={sendEmail}>
+                <input type="hidden" name="contact_number" />
+                <label>Name</label>
+                <input type="text" name="from_name" />
+                <label>Email</label>
+                <input type="email" name="user_email" />
+                <label>Message</label>
+                <textarea name="message_html" />
+                <button type="submit" value="Send"> SEND</button>
+            </form>
+        </div>
     );
-};
-
-export default FormPage;
+}

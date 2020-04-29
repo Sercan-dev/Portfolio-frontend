@@ -1,7 +1,7 @@
 .Nav{
-  background: #1488CC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00c6ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   flex-wrap: wrap;
 }
@@ -13,12 +13,15 @@
   margin-bottom: 150px;
 }
 
+.projects-grid img{
+  height: 176px;
+}
+
 .banner-text {
-  background: #1488CC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
-  width: 70%;
+  background: #00c6ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 80%;
   margin: auto;
   border-radius: 10px;
   margin-top: 150px;
@@ -29,12 +32,14 @@
 }
 
 .banner-text h1 {
+  font-family: optima;
   font-size: 66px;
   font-weight: bold;
   color: white;
 }
 
 .banner-text h4 {
+  font-family: optima;
   font-size: 20px;
   font-weight: bold;
   color: white;
@@ -71,16 +76,63 @@
   padding: 8px;
 }
 
-.form{
-  padding-top: 100px;
-  padding-bottom: 100px;
+.contact-form{
+  background: #00c6ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  width: 60%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+}
+.contact-form h1{
+  font-size: 44px;
+  font-weight: bold;
+  color: white;
+  font-family: optima;
+  padding-bottom: 40px;
 }
 
 
+.contact-form form{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 10px;
+  padding-left: 4em;
+  padding-right: 4em;
+  
+}
+
+.contact-form input, .contact-form textarea{
+  padding: 1em;
+  border: 0;
+  background: #f9feff;
+}
+
+.contact-form button{
+  padding: 1em;
+  border: 0;
+  background-color: mediumspringgreen;
+  color: #f9feff;
+  margin: auto;
+  width: 10em;
+  font-weight: bold;
+}
+
+.contact-form label{
+  color: #f9feff;
+  font-weight: bold;
+}
+
 .main-footer{
-  background: #1488CC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #00c6ff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
   color: white;
   padding-top: 3em;
@@ -90,10 +142,18 @@
   
 }
 
+.main-footer a{
+  color: white;
+  font-size: 2em;
+  padding: 3px;
+
+}
+
 .page-container{
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: #f9feff;
 }
 
 .content-wrap{

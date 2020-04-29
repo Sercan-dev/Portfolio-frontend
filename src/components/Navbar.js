@@ -18,6 +18,7 @@ const Navbar = () => {
 
     </ReactBootStrap.Navbar.Collapse>
     </ReactBootStrap.Navbar>
+    
                 
         </div>
  
