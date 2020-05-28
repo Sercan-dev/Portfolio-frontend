@@ -16,14 +16,14 @@ import { Spring } from 'react-spring/renderprops';
                             <div className="banner-text">
                                 <h1>Full Stack Web Developer</h1>
                                 <hr/>
-                                <p>HTML/CSS | JavaScript | React | Python | Django | Wordpress REST-API</p>
+                                <p>HTML/CSS | JavaScript | React | Python | Django | Wordpress</p>
                                 <div className="social-links">
                                     {/* GitHub */}
                                     <a href="https://github.com/Sercan-dev" rel="noopener noreferrer" target="_blank">
                                     <MDBIcon fab icon="github" />
                                     </a>
                                     {/* LinkedIn */}
-                                    <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                                    <a href="https://www.linkedin.com/in/sercan-capraz-21a1081ab/" rel="noopener noreferrer" target="_blank">
                                     <MDBIcon fab icon="linkedin" />
                                     </a>
                                 </div>    

@@ -20,10 +20,7 @@ class Projects extends Component {
                             This Portfolio
                         </CardText>
                         <CardActions border>
-                            <Button colored>
-                            GitHub
-                            </Button>
-                            <Button colored>Website</Button>
+                            <Button href="https://github.com/Sercan-dev/Portfolio-frontend/tree/Deploy_1" target="_blank" colored>GitHub</Button>
                         </CardActions>
  
                     </Card>
@@ -63,15 +60,13 @@ class Projects extends Component {
                 <div className="projects-grid">
                     {/* Project 1 Python*/}
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-                        <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/121807550/original/fc369c99dc95a93e01f1ff669120bf90c008343f/cinema-4d-3d-animator-python-developer.png) center / cover'}} >Python Project #1</CardTitle>
+                        <img src='media/Bildschirmfoto 2020-05-26 um 19.20.02.png' ></img>
                         <CardText>
-                            Lorem Ipsum is simple dummy text
+                            This is a Django app for a local BJJ competition. 
                         </CardText>
                         <CardActions border>
-                            <Button colored>
-                            GitHub
-                            </Button>
-                            <Button colored>Website</Button>
+                            <Button href="https://github.com/Sercan-dev/we_grapple/tree/deploy" target="_blank" colored>GitHub</Button>
+                            <Button href="https://wegrapple3.herokuapp.com/%5E$" target="_blank" colored>Website</Button>
                         </CardActions>
  
                     </Card>
@@ -110,7 +105,7 @@ class Projects extends Component {
                     <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
                     <img src='/media/Bildschirmfoto 2020-04-25 um 16.14.17.png' ></img>
                         <CardText>
-                            I updated this website for a Agency
+                            I updated this website for an Agency
                         </CardText>
                         <CardActions border>
                             <Button href="https://mthandyland.net" target="_blank" colored>Website</Button>

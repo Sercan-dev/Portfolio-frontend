@@ -34,7 +34,7 @@ const Footer = () => {
                         <h4></h4>
                         <ul className="list-unstyled">
                             <li>
-                            <a href="http://google.com" rel="noopener noreferrer" target="_blank">
+                            <a href="https://www.linkedin.com/in/sercan-capraz-21a1081ab/" rel="noopener noreferrer" target="_blank">
                                 <MDBIcon fab icon="linkedin" />
                             </a>
                             </li>

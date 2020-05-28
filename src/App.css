@@ -6,6 +6,10 @@
   flex-wrap: wrap;
 }
 
+.Nav h4{
+  font-family: Copperplate;
+}
+
 .projects-grid{
   display: flex;
   flex-wrap: wrap;

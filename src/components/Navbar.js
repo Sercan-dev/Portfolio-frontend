@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div className="Nav">
             <ReactBootStrap.Navbar collapseOnSelect expand="lg" variant="dark">
-    <ReactBootStrap.Navbar.Brand href="/Landingpage">Beech Way Designs</ReactBootStrap.Navbar.Brand>
+    <ReactBootStrap.Navbar.Brand href="/Landingpage"> <img src="media/beechwaydesigns_sercan_logo_1.png" style={{ height: '4em', width: '4em' }} /><h4>beech way</h4></ReactBootStrap.Navbar.Brand>
     <ReactBootStrap.Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <ReactBootStrap.Navbar.Collapse id="responsive-navbar-nav">
         <ReactBootStrap.Nav className="mr-auto">
